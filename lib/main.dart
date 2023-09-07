@@ -1,7 +1,15 @@
+import 'package:firebasetrain/views/First.dart';
 import 'package:firebasetrain/views/HomePage.dart';
+import 'package:firebasetrain/views/Login.dart';
+import 'package:firebasetrain/views/Register.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+import 'Auth.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../Auth.dart';
 import 'Register.dart';
 
 class HomePage extends StatelessWidget{
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget{
             child: MaterialButton(onPressed: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Register()),
+                MaterialPageRoute(builder: (context) => const Auth()),
               );
             },height: 56,splashColor: Color(0xFF5771F9),minWidth: 332,child: Text("Get Started Now",style: TextStyle(fontSize: 18,fontFamily: "Poppins",color: Color(0xFF5771F9),fontWeight:FontWeight.w700),),color: Colors.white,shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),),
           )
